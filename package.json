@@ -5,6 +5,11 @@
   "type": "module",
   "scripts": {
     "preinstall": "cd server && npm install",
-    "start": "cd server && node blockly_server.js"
+    "start": "cd server && node blockly_server.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.92.0"
   }
 }
